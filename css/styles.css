@@ -20,12 +20,27 @@ button {
   background-color: #007bff;
   color: #fff;
   border: none;
+  border-radius: 15px;
   cursor: pointer;
+  width: 200px;
 }
 
 button:hover {
   background-color: #0056b3;
 }
 
+.button {
+  gap: 20px;
+  display: flex;
+  flex-grow: row wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  z-index: 0;
+}
 
-
+button:active {
+  z-index: 1;
+}
