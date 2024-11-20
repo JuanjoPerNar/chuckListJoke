@@ -29,6 +29,15 @@ fetchJoke.addEventListener("click", () => {
       jokeList.innerText = "Error: No se pudo la broma";
     });
 });
+window.addEventListener("DOMContentLoaded", () => {
+  const savedJoke = localStorage.getItem("latestJoke");
+  if (savedJoke) {
+    const jokeItem = document.createElement("li");
+    jokeItem.textContent = savedJoke;
+    jokeItem.classList.add("joke-item");
+    jokeList.appendChild(jokeItem);
+  }
+});
 
 // boton para eliminar el ultimo dato o todos los datos
 const quitarElemento = document.querySelector(".quitarElemento");

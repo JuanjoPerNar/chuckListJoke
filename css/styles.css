@@ -37,7 +37,8 @@ button:hover {
   justify-content: center;
   align-items: center;
 }
-img {
+
+#chuckFire {
   z-index: 0;
 }
 
